@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+:root {
+    --max-width-desc: 945px;
+    --main-bg-color: #20202D;
+    --main-text-color: #ffffff;
+    --main-button-color: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
+    --main-button-shadow-color: #B68500;
+    --orange-color: #FFBB01;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+}
+
+ul, menu {
+    list-style: none;
+}
+
+
+/*---<UI elements>--*/
+
+.button {
+    border: none;
+    outline: none;
+    padding: 24px 41px;
+    border-radius: 5px 5px 10px 10px;
+    background: var(--main-button-color);
+    box-shadow: 0px 4px 0 var(--main-button-shadow-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*---</UI elements>--*/
+
+
+/*
+    layout blocks
+*/
+
+.container {
+    max-width: var(--max-width-desc);
+    margin: 0 auto;
+}
+
+.main-block {
+    background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+.header__logo {
+
+}
+.header__icon-menu {
+    display: flex;
+    align-items: center;
+}
+.header__icon-item {
+    margin-left: 20px;
+}
+
+/*Main*/
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main>* {
+    /* width: 40%; */
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.main__about {
+    /* max-width: 420px; */
+    width: 50%;
+}
+
+.main__activity {
+    color: var(--orange-color);
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.main__name {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main__description {
+    font-size: 16px;
+    margin-bottom: 38px;
+}
+
+.main__photo {
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    border: 15px solid var(--main-text-color);
+    background-image: url('../img/me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
