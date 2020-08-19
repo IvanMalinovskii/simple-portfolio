@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLO Academy, стартовый проект</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,12 +36,12 @@
         </header>
         <main class="main container">
             <div class="main__about">
-                <h3 class="main__activity">Фрилансер</h3>
-                <h1 class="main__name">Иван Малиновский</h1>
-                <p class="main__description">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
-                <button class="main__button button">Бесплатная консультация</button>
+                <h3 class="main__activity wow animate__animated animate__bounceInLeft" data-wow-delay=".2s">Фрилансер</h3>
+                <h1 class="main__name wow animate__animated animate__bounceInLeft" data-wow-delay=".3s">Иван Малиновский</h1>
+                <p class="main__description wow animate__animated animate__bounceInLeft" data-wow-delay=".4s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
+                <button class="main__button wow button animate__animated animate__bounceInLeft" data-wow-delay=".5s">Бесплатная консультация</button>
             </div>
-            <div class="main__photo"></div>
+            <div class="main__photo wow animate__animated animate__fadeIn" data-wow-delay=".5s"></div>
         </main>
     </div>
     <section class="advantages">
@@ -140,5 +141,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
