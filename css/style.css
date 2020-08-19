@@ -5,6 +5,7 @@
 :root {
     --max-width-desc: 945px;
     --main-bg-color: #20202D;
+    --second-bg-color: #000000;
     --main-text-color: #ffffff;
     --main-button-color: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
     --main-button-shadow-color: #B68500;
@@ -122,4 +123,49 @@ ul, menu {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+/* Advantages section */
+
+.advantage {
+}
+
+.advantage__img {
+    margin-bottom: 22px;
+}
+
+.advantage__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.advantage__description {
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.advantages {
+    padding: 65px 0;
+    background-color: var(--second-bg-color);
+}
+
+.advantages__title {
+    margin-bottom: 84px;
+}
+
+.advantages__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.advantages__advantage {
+    flex-basis: 30%;
+    margin-bottom: 75px;
 }
